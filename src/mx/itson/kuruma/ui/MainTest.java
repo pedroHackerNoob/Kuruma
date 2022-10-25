@@ -4,6 +4,11 @@
  */
 package mx.itson.kuruma.ui;
 
+import java.util.ArrayList;
+import java.util.List;
+import mx.itson.kuruma.entidades.Divisa;
+import mx.itson.kuruma.entidades.Operacion;
+
 /**
  *
  * @author pedro
@@ -14,13 +19,14 @@ public class MainTest {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        String moneda[] = {"euro", "dolar"};
-        double cambio[] = {0.1500, 1.00};
+        Operacion cambio = new Operacion();
+        List<Divisa> divisas = new ArrayList<>();
+        //crear Divisas
+        Divisa divisa1 = new Divisa();
+        divisa1.setTipo("dolar");
+        divisa1.setCambio(1.0);
+        divisas.add(divisa1);
         
-        for (int i = 0; i == i; i++) {
-            System.out.println("Nombre de moneda: "+moneda[i]+"\t"+cambio[i]);
-        }
     }
     
 }
